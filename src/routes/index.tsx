@@ -250,7 +250,10 @@ function Index() {
         {/* METRICS */}
         <section id="benchmarks" className="grid grid-cols-2 border-y hairline lg:grid-cols-4">
           {METRICS.map((m) => (
-            <div key={m.label} className="border-r border-b hairline px-6 py-9 last:border-r-0 lg:border-b-0">
+            <div
+              key={m.label}
+              className="border-r border-b hairline px-6 py-9 last:border-r-0 lg:border-b-0"
+            >
               <div className="mono-label text-muted-foreground">{m.label}</div>
               <div className="mt-3 font-mono text-[clamp(1.8rem,3vw,2.6rem)] font-bold text-primary text-glow">
                 {m.value}
@@ -315,14 +318,13 @@ function Index() {
           <div className="border-b hairline px-6 py-16 lg:border-r lg:border-b-0 lg:px-10">
             <div className="mono-label text-muted-foreground">// 04 LORE</div>
             <h2 className="mt-4 text-[clamp(1.8rem,4vw,3rem)] leading-none font-bold tracking-tight uppercase">
-              Acrylamide is a{" "}
-              <span className="text-warning">neurotoxin</span>. So is our roadmap.
+              Acrylamide is a <span className="text-warning">neurotoxin</span>. So is our roadmap.
             </h2>
             <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              Named after the industrial monomer that polymerizes under heat, AcrylAMIDE fuses
-              agent threads into a single hardened runtime. There is no telemetry consent dialog,
-              no onboarding carousel, no quarterly "delight" release. There is a reactor, and it
-              is already at temperature.
+              Named after the industrial monomer that polymerizes under heat, AcrylAMIDE fuses agent
+              threads into a single hardened runtime. There is no telemetry consent dialog, no
+              onboarding carousel, no quarterly "delight" release. There is a reactor, and it is
+              already at temperature.
             </p>
             <div className="mt-8 flex flex-wrap gap-2">
               {["NO ELECTRON", "NO GC", "NO SUPERVISION", "NO REFUNDS"].map((t) => (

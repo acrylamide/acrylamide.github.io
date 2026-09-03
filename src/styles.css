@@ -214,16 +214,27 @@
 }
 
 @keyframes reactor-pulse {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 oklch(0.885 0.29 137 / 0.5); }
-  50% { opacity: 0.5; box-shadow: 0 0 0 6px oklch(0.885 0.29 137 / 0); }
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 oklch(0.885 0.29 137 / 0.5);
+  }
+  50% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 6px oklch(0.885 0.29 137 / 0);
+  }
 }
 @utility pulse-dot {
   animation: reactor-pulse 1.8s ease-in-out infinite;
 }
 
 @keyframes scan-sweep {
-  from { transform: translateY(-100%); }
-  to { transform: translateY(2000%); }
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(2000%);
+  }
 }
 @utility scanline {
   animation: scan-sweep 6s linear infinite;
